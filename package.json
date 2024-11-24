@@ -1,0 +1,14 @@
+{
+  "name": "Final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ../node_modules/tailwindcss/lib/cli.js -i ./assets/input/input.css -o ./assets/css/style.css --minify",
+    "dev": "node ../node_modules/tailwindcss/lib/cli.js -i ./assets/input/input.css -o ./assets/css/style.css --watch --minify",
+    "init": "node ../node_modules/tailwindcss/lib/cli.js init tailwind.config.js --full"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

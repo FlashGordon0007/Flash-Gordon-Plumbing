@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Test Final Project</title>
+</head>
+
+<body class="bg-fg-primary">
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex Container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="assets/img/logo.png" id="logo" alt="Logo">
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-darkGrayishBlue">Plumbing</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Heating</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Water Heaters</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Furnaces</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Repairs</a>
+      </div>
+      <!-- Button -->
+      <a href=""
+        class="hidden md:block p-3 px-6 pt-2 text-white bg-blue-500 rounded-full baseline hover:bg-red-400">Book
+        Online</a>
+
+      <!-- Hambuger  -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu  -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="">Plumbing</a>
+        <a href="">Heating</a>
+        <a href="">Water Heaters</a>
+        <a href="">Furnaces</a>
+        <a href="">Repairs</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+</html>
