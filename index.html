@@ -16,20 +16,19 @@
     <!-- Flex Container -->
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <div class="pt-2">
+      <div3 class="pt-2">
         <img src="assets/img/logo.png" id="logo" alt="Logo">
-      </div>
-      <!-- Menu Items -->
-      <div class="hidden space-x-6 md:flex">
-        <a href="#" class="hover:text-darkGrayishBlue">Plumbing</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Heating</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Water Heaters</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Furnaces</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Repairs</a>
+      </div3 <!-- Menu Items -->
+      <div class="hidden text-xl space-x-6 md:flex">
+        <a href="#" class="text-zinc-300 hover::text-white">Plumbing</a>
+        <a href="#" class="text-zinc-300 hover:text-white">Heating</a>
+        <a href="#" class="text-zinc-300 hover:text-white">Water Heaters</a>
+        <a href="#" class="text-zinc-300 hover:text-white">Furnaces</a>
+        <a href="#" class="text-zinc-300 hover:text-white">Repairs</a>
       </div>
       <!-- Button -->
       <a href=""
-        class="hidden md:block p-3 px-6 pt-2 text-white bg-blue-500 rounded-full baseline hover:bg-red-400">Book
+        class="hidden md:block p-3 px-6 pt-2 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-red-400">Book
         Online</a>
 
       <!-- Hambuger  -->
@@ -52,6 +51,69 @@
       </div>
     </div>
   </nav>
+  <!-- footer  -->
+  <footer class="bg-black">
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links  -->
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          <!-- logo  -->
+          Copyright &copy; 2022, All Rights Reserved
+        </div>
+        <div class="">
+          <img src="assets/img/logo.png" id="logo" alt="Logo">
+        </div>
+        <!-- social  -->
+
+      </div>
+      <!-- footer Nav  -->
+      <div class="flex justify-evenly space-x-8 lg:space-x-32">
+        <div class="flex flex-col text-xl text-zinc-300 space-y-3">
+          <a href="#" class="hover:text-white">Plumbing</a>
+          <a href="#" class="hover:text-white">Heating</a>
+          <a href="#" class="hover:text-white">Repairs</a>
+        </div>
+        <div class="flex flex-col text-xl text-zinc-300 space-y-3">
+          <a href="#" class="hover:text-white">Careers</a>
+          <a href="#" class="hover:text-white">Blog</a>
+          <a href="#" class="hover:text-white">About&nbspUs</a>
+        </div>
+      </div>
+      <!-- input container  -->
+      <div class="flex flex-col justify-center">
+        <form>
+          <div class="flex space-x-3">
+            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Join our VIP club">
+            <button class="px-6 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+              Go
+            </button>
+          </div>
+        </form>
+        <div class="flex pt-4 justify-center space-x-4">
+          <!-- links  -->
+          <a href="#">
+            <img src="assets/img/icon-facebook.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-youtube.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-twitter.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-pinterest.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-instagram.svg" alt="" class="h-8">
+          </a>
+        </div>
+        <div class="hidden p-4 text-white md:block">
+          Copyright &copy; 2022, All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

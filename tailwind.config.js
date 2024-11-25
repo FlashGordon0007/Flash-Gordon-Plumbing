@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'fg-primary': '#000000',
+        'fg-text': '#e4dbdb',
       },
     },
     screens: {
