@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(..vendor/fontawesome/css/solid.css);
+@import url(..vendor/fontawesome/css/fontawesome.css);
+@import url(../fonts/roboto/all.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #logo {
   @apply w-[42px];
   width: 42px;
@@ -54,4 +64,119 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+section {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 0px;
+  left: -575px;
+  opacity: 0;
+  height: 130px;
+  width: 575px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 15px;
+}
+
+.slide .content h1 {
+  margin-bottom: 5px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(575px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #f1ca2e;
+  cursor: pointer;
+  padding: 18px 20px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #baafaf;
+  color: #f1ca2e;
+}
+
+@media (max-width: 550px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Background images */
+.slide:first-child {
+  background: url('../img/Combination-Radiant-In-Floor-Heating-System.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('../img/AO-Smith-Tankless-Water-Heater-Troubleshooting.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('../img/Job_1.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+  background: url('../img/671657083373.webp') no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('../img/drainage-IMG_5285.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(6) {
+  background: url('../img/Plumber-guy-2.png') no-repeat center top/cover;
 }

@@ -1,0 +1,12 @@
+/* Webfont: RobotoSlab-Bold */@font-face {
+    font-family: 'RobotoSlab2';
+    src: url('RobotoSlab-Bold.eot'); /* IE9 Compat Modes */
+    src: url('RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('RobotoSlab-Bold.woff') format('woff'), /* Modern Browsers */
+         url('RobotoSlab-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('RobotoSlab-Bold.svg#RobotoSlab-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
