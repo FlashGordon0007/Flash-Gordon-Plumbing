@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 457 134">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Audiowide-Regular, Audiowide;
+      }
+
+      .cls-2 {
+        font-size: 24px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Logo_Hero">
+    <g>
+      <image width="106" height="302" transform="translate(204.67) scale(.44)" xlink:href="logo.png"/>
+      <text class="cls-1" transform="translate(0 58.89)"><tspan x="0" y="0">FLASH </tspan></text>
+      <text class="cls-1" transform="translate(254.52 58.89)"><tspan x="0" y="0">ORDON</tspan></text>
+      <text class="cls-2" transform="translate(29.6 96.46)"><tspan x="0" y="0">P</tspan><tspan class="cls-3" x="19.35" y="0">L</tspan><tspan x="36.13" y="0">UMBING</tspan></text>
+      <text class="cls-2" transform="translate(291.42 96.23)"><tspan x="0" y="0">HEATING</tspan></text>
+    </g>
+  </g>
+</svg>

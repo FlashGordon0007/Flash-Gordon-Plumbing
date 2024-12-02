@@ -11,24 +11,31 @@
 </head>
 
 <body class="bg-fg-primary">
+  <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+      class="w-[80%] mx-auto mt-6 max-w-[660px]"></a>
+  <!-- <H1 class="-mb-6 pt-2 px-2 text-white text-center text-xl md:text-2xl lg:text-3xl">
+    FLASH GORDON
+    PLUMBING&nbsp;&&nbsp;HEATING
+  </H1> -->
   <!-- Navbar -->
-  <nav class="relative container mx-auto p-6">
+  <nav class="grid relative container mx-auto p-6">
     <!-- Flex Container -->
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between lg: justify-evenly">
       <!-- Logo -->
-      <div3 class="pt-2">
-        <img src="assets/img/logo.png" id="logo" alt="Logo">
-      </div3 <!-- Menu Items -->
-      <div class="hidden text-xl space-x-6 md:flex">
-        <a href="#" class="text-zinc-300 hover::text-white">Plumbing</a>
-        <a href="#" class="text-zinc-300 hover:text-white">Heating</a>
-        <a href="#" class="text-zinc-300 hover:text-white">Water Heaters</a>
-        <a href="#" class="text-zinc-300 hover:text-white">Furnaces</a>
-        <a href="#" class="text-zinc-300 hover:text-white">Repairs</a>
+      <!-- <div class="md:mr-4">
+        <a href="../Final/index.html"><img src="assets/img/logo.png" id="logo" alt="Logo"><a>
+      </div>  -->
+      <!-- Menu Items -->
+      <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
+        <a href="#" class="text-zinc-400 hover:text-white">Plumbing</a>
+        <a href="#" class="text-zinc-400 hover:text-white">Heating</a>
+        <a href="#" class="text-zinc-400 hover:text-white">Water Heaters</a>
+        <a href="#" class="text-zinc-400 hover:text-white">Furnaces</a>
+        <a href="#" class="text-zinc-400 hover:text-white">Repairs</a>
       </div>
       <!-- Button -->
       <a href=""
-        class="hidden md:block p-3 px-6 pt-2 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E]">Book
+        class="hidden md:block p-3 px-6 pt-2 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] md:-mr-8">Book
         Online</a>
 
       <!-- Hambuger  -->
@@ -40,19 +47,24 @@
     </div>
 
     <!-- Mobile menu  -->
-    <div class="md:hidden">
+    <div class="relative z-10 md:hidden">
       <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="">Plumbing</a>
-        <a href="">Heating</a>
-        <a href="">Water Heaters</a>
-        <a href="">Furnaces</a>
-        <a href="">Repairs</a>
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg">
+        <a href="#" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
+        <a href="#" class="text-zinc-800 hover:text-zinc-400">Heating</a>
+        <a href="#" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
+        <a href="#" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
+        <a href="#" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
       </div>
     </div>
+    <button class="mx-auto text-white text-center p-3 m-4 ring-2 rounded-2xl ring-[#f1ca2e] ring-offset-4
+      ring-offset-zinc-100/50 hover:bg-[#C3922E]">
+      <!-- ring-offset-8 ring-offset-[#baafaf]-100/50 -->
+      NEW CUSTOMERS CLICK HERE FOR 10% DISCOUNT
+    </button>
   </nav>
 
-  <section>
+  <section class="relative">
     <div class="slider">
       <div class="slide current">
         <div class="content">
@@ -110,33 +122,63 @@
       </div>
     </div>
     <div class="buttons">
-      <button id="prev"><i class="fas fa-arrow-left"></i></button>
-      <button id="next"><i class="fas fa-arrow-right"></i></button>
+      <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+          <path
+            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+        </svg></button>
+      <button id="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+          <path
+            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+        </svg></button>
     </div>
   </section>
+  <!-- ring-[#baafaf] [#baafaf] -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <div class="text-white text-center p-3 m-4 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
+      <h2 class="mb-4 font-bold">Water Heaters In Stock!</h2>
+      <h3 class="text-left font-bold">Electric Water Heaters:</h3>
+      <ul class="text-right">40-50 Gallon installed for $1,350</ul>
+      <ul class="text-right">20-30 Gallon installed for $1,150</ul>
+      <h3 class="text-left mt-4 font-bold">Gas Type Water Heaters:</h3>
+      <ul class="text-right">40-50 Gallon installed for $1,750</ul>
+      <h3 class="text-left mt-4 font-bold">Tankless Water Heaters:</h3>
+      <p class="text-right">Installed for $5,500</p>
+      <h3 class="text-left mt-4 font-bold">Heat Pump Water Heaters:</h3>
+      <p class="text-right">Installed for $5,500</p>
+      <h3 class="text-left mt-4 font-bold">Boilers:</h3>
+      <p class="text-right">Installed for $6,500</p>
+      <a href=""><button>Book Now</button></a>
+    </div>
+    <div class="text-white text-center p-3 m-4 ring-2 rounded-lg ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
+      <h2>Furnaces In stock!</h2>
+    </div>
+    <div class="text-white text-center p-3 m-4 ring-2 rounded-xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
+      <h2>Plumbing Repairs 24/7!</h2>
+    </div>
+    <div class="text-white text-center p-3 m-4 ring-2 rounded-2xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
+      <h2>Electrical Repairs 24/7!</h2>
+    </div>
+  </div>
+  <div
+    class="grid-cols-4 text-white text-center text-xl p-3 h-auto m-4 ring-2 rounded-3xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 md:font-black lg:text-3xl ">
+    <p>PUBLISHED PRICES PROVE OUR INTEGRITY<br>GET HOT WATER OR HEAT BACK ON TODAY OR YOUR SUITE IS ON US!<br>NEVER BUY
+      ANOTHER HEATER AGAIN!</p>
+  </div>
+
   <!-- footer  -->
   <footer class="bg-black">
-    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+    <div class="container flex flex-col-reverse justify-evenly px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
       <!-- Logo and social links  -->
-      <div
-        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-        <div class="mx-auto my-6 text-center text-white md:hidden">
-          <!-- logo  -->
-          Copyright &copy; 2022, All Rights Reserved
-        </div>
-        <div class="">
-          <img src="assets/img/logo.png" id="logo" alt="Logo">
-        </div>
-      </div>
+
 
       <!-- footer Nav  -->
       <div class="flex justify-evenly space-x-8 lg:space-x-32">
-        <div class="flex flex-col text-xl text-zinc-300 space-y-3">
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
           <a href="#" class="hover:text-white">Plumbing</a>
           <a href="#" class="hover:text-white">Heating</a>
           <a href="#" class="hover:text-white">Repairs</a>
         </div>
-        <div class="flex flex-col text-xl text-zinc-300 space-y-3">
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
           <a href="#" class="hover:text-white">Careers</a>
           <a href="#" class="hover:text-white">Blog</a>
           <a href="#" class="hover:text-white">About&nbspUs</a>
@@ -146,9 +188,10 @@
       <!-- input container  -->
       <div class="flex flex-col justify-center">
         <form>
-          <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Join our VIP club">
-            <button class="px-6 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+          <div class="flex space-x-3 flex-col justify-center md:flex-row">
+            <input type="text" class="flex-1  mb-4 py-2 px-4 rounded-full focus:outline-none"
+              placeholder="Join our VIP club">
+            <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
               Go
             </button>
           </div>
@@ -171,11 +214,25 @@
             <img src="assets/img/icon-instagram.svg" alt="" class="h-8">
           </a>
         </div>
-        <div class="hidden p-4 text-white md:block">
-          Copyright &copy; 2022, All Rights Reserved
-        </div>
       </div>
     </div>
+    <!-- <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+      class="w-[80%] mx-auto -mt-8 mb-6 max-w-[660px]"></a> -->
+    <div class=" p-4 text-white text-center ">
+      <p>
+        <a href="./index.html" class="underline">Flash Gordon Plumbing</a>
+        <small>
+          Copyright &copy; 2024 Gordon Montgomery, All
+          Rights Reserved
+        </small>
+      </p>
+    </div>
+    <!-- <div>
+      <H1 class="-mt-8 pb-2 px-2 drop-shadow-lg text-white text-center text-xl md:text-2xl lg:text-3xl">
+        FLASH GORDON
+        PLUMBING&nbsp;&&nbsp;HEATING
+      </H1> 
+    </div> -->
   </footer>
 </body>
 

@@ -1,0 +1,12 @@
+/* Webfont: FasterOne-Regular */@font-face {
+    font-family: 'FasterOne';
+    src: url('FasterOne-Regular.eot'); /* IE9 Compat Modes */
+    src: url('FasterOne-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FasterOne-Regular.woff') format('woff'), /* Modern Browsers */
+         url('FasterOne-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('FasterOne-Regular.svg#FasterOne-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
