@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Book a service</title>
+</head>
+
+<body class="bg-fg-primary">
+  <header>
+    <!-- Logo -->
+    <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+        class="w-[80%] mx-auto mt-6 max-w-[660px]"></a>
+
+
+    <!-- Navbar -->
+    <nav class="grid relative container mx-auto p-6">
+      <!-- Flex Container -->
+      <div class="flex items-center justify-between lg: justify-evenly">
+
+        <!-- Menu Items -->
+        <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
+          <a href="#" class="text-zinc-400 hover:text-white">Plumbing</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Heating</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Water Heaters</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Furnaces</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Repairs</a>
+        </div>
+        <!-- Button -->
+        <a href=""
+          class="hidden md:block p-3 px-6 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] ">Book
+          Online</a>
+
+        <!-- Hambuger  -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu  -->
+      <div class="relative z-10 md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg">
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Heating</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
+          <button>
+            <a href="#" class="bg-zinc-400 rounded-full p-3 text-zinc-800 drop-shadow-xl hover:text-white">Schedule
+              Work</a>
+          </button>
+        </div>
+    </nav>
+
+  </header>
+  <main>
+    <form class="grid text-zinc-800 md:textlg lg:text-xl container bg-zinc-200 form_layout m-4" action="contact us">
+      <h5 class="container pt-3"><strong>New Request</strong></h5>
+
+      <div class="container form grid">
+        <strong>Contact Details</strong>
+        <input type="text" name="customername" id="form-name" placeholder="First name">
+        <input type="text" name="address" id="form-address" placeholder="Last name">
+        <input type="text" name="companyname" id="form-name" placeholder="company name (if applicable)">
+        <input type="email" id="form-email" placeholder="Your Email Address">
+        <p>By providing your email, you consent to recieving marketing emails and promotions. You can unsubscribe at
+          any time.</p>
+        <input type="tel" name="telephone" id="form-telephone" placeholder="Your Phone Number">
+        <p>
+          By providing your phone number, you agree to recieve text messages (SMS) from Impetus Plumbing and Heating
+          LTD. You can unsubscribe at anytime by replying STOP. Message and data rates may apply. Message frequency
+          varies.
+        </p>
+        <strong>Address</strong>
+        <div>
+          <input type="text" name="address" id="form-address" placeholder="Street 1">
+          <input type="text" name="address" id="form-address" placeholder="Street 2">
+          <input type="text" name="address" id="form-address" placeholder="City">
+          <input type="text" name="address" id="form-address" placeholder="Province">
+          <input type="text" name="address" id="form-address" placeholder="Postal Code">
+        </div>
+        <strong>Servive Details</strong>
+        <label for="information"><strong>Please provide as much information as you can</strong></label>
+        <textarea name="" id=""></textarea>
+        <ul>
+          <li>
+            <label for="services"><strong>What Service do you require?</strong></label>
+            <ul>
+              <li><label><input type="checkbox" name="service" value="Plumbing"> Plumbing</label></li>
+              <li><label><input type="checkbox" name="service" value="Heating" checked=""> Heating</label></li>
+              <li><label><input type="checkbox" name="service" value="Gas"> Gas</label></li>
+              <li><label><input type="checkbox" name="service" value="HVAC"> HVAC</label></li>
+              <li><label><input type="checkbox" name="service" value="Cross Connection"> Cross Connection</label></li>
+            </ul>
+          </li>
+        </ul>
+        <label for="Availablity"><strong>Your Availablity?</strong></label>
+        <label for="Availablity"><strong>What day would be the best for an assessment of the work?</strong></label>
+        <ul>
+          <li><input type="datetime-local"></li>
+          <label for="Availablity"><strong>What is another daythat will work for you?</strong>(Optional)</label>
+          <li><input type="datetime-local"></li>
+          <ul>
+            <li>
+              <label for="services"><strong>What are your preffered arrival times?</strong>(Optional)</label>
+              <div class="pad">
+                <ul>
+                  <li><label><input type="checkbox" name="times" value="Anytime"> Anytime</label></li>
+                  <li><label><input type="checkbox" name="times" value="Morning" checked=""> Morning</label></li>
+                  <li><label><input type="checkbox" name="times" value="Afternoon"> Afternoon</label></li>
+                  <li><label><input type="checkbox" name="times" value="Evenings"> Evenings</label></li>
+                </ul>
+              </div>
+              <div class="pad">
+                <label for="images"><strong>Upload Images</strong>(Optional) <br> </label>
+
+                <label>Share images of the work to be done.
+                  <input type="file" name="photo"></label>
+
+                <p class="pad">
+                  Do not upload files with payment information. Ensure you have all required rights, consent, and
+                  permissions to share.
+                </p>
+                <!-- <li class=" text-center ybtn"><input type="submit" value="SUBMIT"></li> -->
+                <a href="" class="link ybtn"><strong>Submit</strong></a>
+                <p class="border">This form is protected by reCAPTCHA and the google <span>Privacy Policy</span> and
+                  <span>Terms of Service</span> apply.
+                </p>
+                <p class="jobber text-center">Powered by <img
+                    src="./assets/images/site_images/powered_by_jobber-7d91fc1287f19f05bfe9dea6f733b1e1a7a0ccd8c2e7df544ebb6cd3ee68fb66.svg"
+                    alt="Jobber"></p>
+              </div>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </form>
+    <div class="container bg-zinc-600 text-white text-center py-2 p-2 rounded-2xl text-md font-black md:text-xl
+          lg:text-3xl">
+      <p>PUBLISHED PRICES MEANS INTEGRITY!</p>
+      <p>HOT WATER/HEAT RESTORED IN 1 DAY!</p>
+      <p>NEVER BUY ANOTHER HEATER AGAIN!</p>
+    </div>
+  </main>
+  <!-- footer  -->
+  <footer class="bg-black">
+    <div class="container flex flex-col-reverse justify-evenly px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links  -->
+
+
+      <!-- footer Nav  -->
+      <div class="flex mx-auto space-x-8 lg:space-x-32">
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="#" class="hover:text-white">Plumbing</a>
+          <a href="#" class="hover:text-white">Heating</a>
+          <a href="#" class="hover:text-white">Repairs</a>
+        </div>
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="#" class="hover:text-white">Careers</a>
+          <a href="#" class="hover:text-white">Blog</a>
+          <a href="#" class="hover:text-white">About&nbspUs</a>
+        </div>
+      </div>
+
+      <!-- input container  -->
+      <div class="grid grid-col-1 mx-auto">
+        <form>
+          <div class=" flex space-x-3 justify-center flex-row">
+            <input type=rid class="flex-1 mb-4 py-2 px-4 rounded-full focus:outline-none"
+              placeholder="Join our VIP club">
+            <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+              Go
+            </button>
+          </div>
+        </form>
+        <div class="flex pt-4 justify-center space-x-4">
+          <!--social links  -->
+          <a href="#">
+            <img src="assets/img/icon-facebook.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-youtube.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-twitter.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-pinterest.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-instagram.svg" alt="" class="h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+      class="w-[80%] mx-auto -mt-8 mb-6 max-w-[660px]"></a> -->
+    <div class=" p-4 text-white text-center ">
+      <p>
+        <a href="./index.html" class="underline">Flash Gordon Plumbing</a>
+        <small>
+          Copyright &copy; 2024 Gordon Montgomery, All
+          Rights Reserved
+        </small>
+      </p>
+    </div>
+    <!-- <div>
+      <H1 class="-mt-8 pb-2 px-2 drop-shadow-lg text-white text-center text-xl md:text-2xl lg:text-3xl">
+        FLASH GORDON
+        PLUMBING&nbsp;&&nbsp;HEATING
+      </H1> 
+    </div> -->
+  </footer>
+</body>
+
+</html>

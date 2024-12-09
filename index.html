@@ -10,169 +10,385 @@
   <title>Test Final Project</title>
 </head>
 
+<!-- Logo -->
+
 <body class="bg-fg-primary">
-  <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
-      class="w-[80%] mx-auto mt-6 max-w-[660px]"></a>
-  <!-- <H1 class="-mb-6 pt-2 px-2 text-white text-center text-xl md:text-2xl lg:text-3xl">
-    FLASH GORDON
-    PLUMBING&nbsp;&&nbsp;HEATING
-  </H1> -->
-  <!-- Navbar -->
-  <nav class="grid relative container mx-auto p-6">
-    <!-- Flex Container -->
-    <div class="flex items-center justify-between lg: justify-evenly">
-      <!-- Logo -->
-      <!-- <div class="md:mr-4">
-        <a href="../Final/index.html"><img src="assets/img/logo.png" id="logo" alt="Logo"><a>
-      </div>  -->
-      <!-- Menu Items -->
-      <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
-        <a href="#" class="text-zinc-400 hover:text-white">Plumbing</a>
-        <a href="#" class="text-zinc-400 hover:text-white">Heating</a>
-        <a href="#" class="text-zinc-400 hover:text-white">Water Heaters</a>
-        <a href="#" class="text-zinc-400 hover:text-white">Furnaces</a>
-        <a href="#" class="text-zinc-400 hover:text-white">Repairs</a>
-      </div>
-      <!-- Button -->
-      <a href=""
-        class="hidden md:block p-3 px-6 pt-2 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] md:-mr-8">Book
-        Online</a>
+  <header>
 
-      <!-- Hambuger  -->
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
 
-    <!-- Mobile menu  -->
-    <div class="relative z-10 md:hidden">
-      <div id="menu"
-        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-lg">
-        <a href="#" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
-        <a href="#" class="text-zinc-800 hover:text-zinc-400">Heating</a>
-        <a href="#" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
-        <a href="#" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
-        <a href="#" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
-      </div>
-    </div>
-    <button class="mx-auto text-white text-center p-3 m-4 ring-2 rounded-2xl ring-[#f1ca2e] ring-offset-4
-      ring-offset-zinc-100/50 hover:bg-[#C3922E]">
-      <!-- ring-offset-8 ring-offset-[#baafaf]-100/50 -->
-      NEW CUSTOMERS CLICK HERE FOR 10% DISCOUNT
+    <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+        class="w-[50%] mx-auto my-2  max-w-[660px]"></a>
+
+    <!-- Navbar -->
+    <!-- Hambuger  -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
     </button>
-  </nav>
+    <nav class="grid relative w-100">
+      <!-- Flex Container -->
+      <div class="flex pb-2 justify-between lg: justify-evenly">
 
-  <section class="relative">
-    <div class="slider">
-      <div class="slide current">
-        <div class="content">
-          <h1>Slide One</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+        <!-- Menu Items -->
+        <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
+          <a href="#" class="text-zinc-400 hover:text-white">Plumbing</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Heating</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Water Heaters</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Furnaces</a>
+          <a href="#" class="text-zinc-400 hover:text-white">Repairs</a>
+        </div>
+        <!-- Button -->
+        <a href=""
+          class="hidden md:block p-3 px-6 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] ">Book
+          Online</a>
+
+      </div>
+
+      <!-- Mobile menu  -->
+      <div class="relative z-10 md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center hidden self-end py-6 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-lg">
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Heating</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
+          <a href="#" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
+          <a href="#" class="bg-zinc-400 rounded-full p-3 text-zinc-800 drop-shadow-xl hover:text-white">Schedule
+            Work</a>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Two</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+    </nav>
+  </header>
+
+  <main>
+    <section class="relative">
+      <div class="slider">
+        <div class="slide current">
+          <div class="content">
+            <h1>Slide One</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Slide Two</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Slide Three</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Slide Four</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Slide Five</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Slide Six</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
+              repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
+              qui.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Three</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+      <div class="buttons">
+        <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+          </svg></button>
+        <button id="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+          </svg></button>
+      </div>
+    </section>
+
+
+
+    <div class="cta">
+      <div class="flex flex-col md:flex-row text-white">
+
+        <span>
+          <img src="./assets/img/excellent-service-icon.svg" alt="">
+          <h3>
+            EXCELLENT SERVICE
+          </h3>
+        </span>
+
+        <span>
+          <img src="./assets/img/always-on-time-icon.svg" alt="">
+          <h3>
+            ALWAYS ON TIME
+          </h3>
+        </span>
+
+        <span>
+          <img src="./assets/img/book-online-icon.svg" alt="">
+          <h3>
+            EASY TO BOOK
+          </h3>
+        </span>
+      </div>
+    </div>
+
+    <!-- Service Cards -->
+    <!-- ring-[#baafaf] [#baafaf] -->
+    <div class="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[3rem] gap-[2rem] pb-[2rem]">
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>WATER HEATERS</h2>
+        <img src="./assets/img/monty/heat-pump-water heaters are 99% efficient.png" alt="">
+        <div>
+          <h3 class="text-left font-bold pb-2">Electric Water Heaters:</h3>
+          <ul>
+            <li class="text-right">40-50 Gallon installed for $1,350</li>
+            <li class="text-right">20-30 Gallon installed for $1,150</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Gas Type Water Heaters:</h3>
+          <ul>
+            <li class="text-right">40-50 Gallon installed for $1,750</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Tankless Water Heaters:</h3>
+          <ul>
+            <li class="text-right">Installed for $5,500</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Heat Pump Water Heaters:</h3>
+          <ul>
+            <li class="text-right">Installed for $5,500</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Boilers:</h3>
+          <p class="text-right">Installed for $6,500</p>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Hot Water Recirculation Pumps:</h3>
+          <ul>
+            <li class="text-right">With a new heater installed for $500</li>
+            <li class="text-right">With existing heater installed for $950</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Four</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>PLUMBING REPAIRS</h2>
+        <img
+          src="./assets/img/monty/Toto-Legato-WASHLET-1-Piece-Elongated-1.28-GPF-Universal-Height-Skirted-Toilet-with-CEFIONTECT-Cotton-White-MS624124CEFG-01-bfeffb46-7938-465a-997a-b0447016caa6_600.webp"
+          alt="">
+        <div>
+          <h3 class="text-left font-bold pb-2">Toilets:</h3>
+          <ul>
+            <li class="text-right">Pro Flow 2-piece installed for $595</li>
+            <li class="text-right">Toto or Kohler 1-piece installed for $795</li>
+            <li class="text-right">Leaking toilets reset for $279</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Garbage Disposals:</h3>
+          <ul>
+            <li class="text-right">Badger-5 with 5 year warranty installed for $650</li>
+            <li class="text-right">Pro-Series with 10 year warranty installed for $850</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Plumbing & Pipe Repairs:</h3>
+          <ul>
+            <li class="text-right">Sewer Camera Inspection for $399</li>
+            <li class="text-left">Clogged, leaking, & broken drains</li>
+            <li class="text-left">Leaking or frozen pipes</li>
+            <li class="text-left">Broken faucets</li>
+            <li class="text-left">Bathtub & shower repairs</li>
+            <li class="text-left">Kitchen sinks</li>
+            <li class="text-right">Repairs billed in .5hr increments @ $179 per hour </li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Five</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>ELECTRICAL REPAIRS</h2>
+        <img src="./assets/img/monty/Flash Gordon testing breakers.jpg" alt="">
+        <div>
+          <h3 class="text-left font-bold pb-2">Light fixtures:</h3>
+          <ul>
+            <li class="text-right">New light fixtures installed for $150</li>
+            <li class="text-right">Can Lights installed for $95</li>
+            <li class="text-right">Under cabinet Lights installed for $295</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Outlets & Switches:</h3>
+          <ul>
+            <li class="text-right">New outlets installed for $95</li>
+            <li class="text-right">New switches installed for $95</li>
+            <li class="text-right">GFI Outlets installed for $150</li>
+            <li class="text-right">Smart lighting and switches installed</li>
+            <li class="text-right">Home automation & security solutions</li>
+            <li class="text-right">Security lighting and cameras</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Get Electrical problems fixed fast!:</h3>
+          <ul>
+            <li class="text-right">Breakers tripping</li>
+            <li class="text-right">Electrical shorts</li>
+            <li class="text-right">Hot Tub disconnects and outlets</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
         </div>
       </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Slide Six</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eos expedita iusto aliquid quas
-            repudiandae id maxime ab, debitis porro atque deleniti quisquam, modi dolores architecto facere quae sed
-            qui.
-          </p>
+
+      <div class="furnace text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>FURNACES</h2>
+        <img src="./assets/img/monty/Screen-Shot-2015-02-12-at-12.webp" alt="">
+        <div>
+          <h3 class="text-left font-bold pb-2">Gas Furnaces:</h3>
+          <ul>
+            <li class="text-right">Get a 5 year full service on heat exchanger, burner cleaning, and new filter for $379
+            </li>
+          </ul>
+          <ul>
+            <li class="text-right">40-60K BTU (up to 2,000 sq ft) installed for $6,495</li>
+            <li class="text-right">95K BTU (over 2,000 sq ft) installed for $8,450</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Electric Furnaces:</h3>
+          <ul>
+            <li class="text-right">Get an annual maintenace service including a new filter for $179</li>
+            <li class="text-right">Small and mobile homes installed for $3,950</li>
+            <li class="text-right">Large home installed for $7,950</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
+        </div>
+      </div>
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>HVAC | FANS </h2>
+        <img src="./assets/img/monty/images (14).jpg" alt="">
+        <div>
+          <ul>
+            <li class="text-right">Ultra Quiet Bathroom Fans installed for $695</li>
+            <li class="text-right">Kitchen Range Hoods installed for $795</li>
+            <li class="text-right">Whole house HEPA filters installed for $995</li>
+            <li class="text-right">Dryer Venting can be repaired by the hour or replace for $795</li>
+            <li class="text-right">Ceiling Fans installed for $695</li>
+            <li class="text-right">Gable Attic Fans installed for $695</li>
+            <li class="text-right">Roof Attic Fans installed for $795</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
+        </div>
+      </div>
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>HEAT PUMPS</h2>
+        <img src="./assets/img/monty/Mini_split_9a9259c17d.jpeg" alt="">
+        <div>
+          <h3 class="text-left font-bold pb-2">Heat Pumps with Air Handlers:</h3>
+          <ul>
+            <li class="text-right">Small and mobile homes installed for $8,450</li>
+            <li class="text-right">Large home installed for $7,950</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Ductless Heat Pumps (mini-split):</h3>
+          <ul>
+            <li class="text-right">Base price for 1 head installed for $5,950</li>
+            <li class="text-right">Each additional head installed for $2,000</li>
+            <li class="text-right">Hidden recessed style heads adds $1,000 per head</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="text-zinc-800 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="">Book Now</a>
         </div>
       </div>
     </div>
-    <div class="buttons">
-      <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-          <path
-            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
-        </svg></button>
-      <button id="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-          <path
-            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-        </svg></button>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-500px gap-4 m-4 w-11/12 md:w-5/6">
+      <img src="./assets/img/monty/Bellingham Service  Map.png" alt="Business location map">
+      <div class="flex flex-col gap-1 md:gap-2 lg:gap-6">
+        <h2 class=" text-white text-center md:text-3xl py-1">SERVICE AREAS</h2>
+        <ul class="text-center text-lg lg:space-y-2 md:text-2xl lg:text-3xl">
+          <li>Bellingham</li>
+          <li>Samish Lake</li>
+          <li>Fairhaven</li>
+          <li>Chuckanut</li>
+          <li>Edgemoore</li>
+          <li>Geneva</li>
+          <li>Sudden Valley</li>
+          <li>Marietta-Alderwood</li>
+          <li>Ferndale</li>
+        </ul>
+        <button
+          class="mx-auto text-zinc-800 text-center font-black bg-zinc-400 py-3 px-4 rounded-full  hover:bg-[#C3922E]">
+          <!-- ring-offset-8 ring-offset-[#baafaf]-100/50 -->
+          10% DISCOUNT *
+        </button>
+      </div>
+
+    </section>
+    <div class="container bg-zinc-600 text-white text-center py-2 p-2 rounded-2xl text-md font-black md:text-xl
+      lg:text-3xl">
+      <p>PUBLISHED PRICES MEANS INTEGRITY!</p>
+      <p>HOT WATER/HEAT RESTORED IN 1 DAY!</p>
+      <p>NEVER BUY ANOTHER HEATER AGAIN!</p>
     </div>
-  </section>
-  <!-- ring-[#baafaf] [#baafaf] -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-    <div class="text-white text-center p-3 m-4 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
-      <h2 class="mb-4 font-bold">Water Heaters In Stock!</h2>
-      <h3 class="text-left font-bold">Electric Water Heaters:</h3>
-      <ul class="text-right">40-50 Gallon installed for $1,350</ul>
-      <ul class="text-right">20-30 Gallon installed for $1,150</ul>
-      <h3 class="text-left mt-4 font-bold">Gas Type Water Heaters:</h3>
-      <ul class="text-right">40-50 Gallon installed for $1,750</ul>
-      <h3 class="text-left mt-4 font-bold">Tankless Water Heaters:</h3>
-      <p class="text-right">Installed for $5,500</p>
-      <h3 class="text-left mt-4 font-bold">Heat Pump Water Heaters:</h3>
-      <p class="text-right">Installed for $5,500</p>
-      <h3 class="text-left mt-4 font-bold">Boilers:</h3>
-      <p class="text-right">Installed for $6,500</p>
-      <a href=""><button>Book Now</button></a>
-    </div>
-    <div class="text-white text-center p-3 m-4 ring-2 rounded-lg ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
-      <h2>Furnaces In stock!</h2>
-    </div>
-    <div class="text-white text-center p-3 m-4 ring-2 rounded-xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
-      <h2>Plumbing Repairs 24/7!</h2>
-    </div>
-    <div class="text-white text-center p-3 m-4 ring-2 rounded-2xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50">
-      <h2>Electrical Repairs 24/7!</h2>
-    </div>
-  </div>
-  <div
-    class="grid-cols-4 text-white text-center text-xl p-3 h-auto m-4 ring-2 rounded-3xl ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 md:font-black lg:text-3xl ">
-    <p>PUBLISHED PRICES PROVE OUR INTEGRITY<br>GET HOT WATER OR HEAT BACK ON TODAY OR YOUR SUITE IS ON US!<br>NEVER BUY
-      ANOTHER HEATER AGAIN!</p>
-  </div>
+  </main>
 
   <!-- footer  -->
   <footer class="bg-black">
-    <div class="container flex flex-col-reverse justify-evenly px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+    <div class="container flex flex-col-reverse justify-evenly px-6 py-4 mx-auto space-y-8 md:flex-row md:space-y-0">
       <!-- Logo and social links  -->
 
 
       <!-- footer Nav  -->
-      <div class="flex justify-evenly space-x-8 lg:space-x-32">
+      <div class="flex mx-auto space-x-8 lg:space-x-32">
         <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
           <a href="#" class="hover:text-white">Plumbing</a>
           <a href="#" class="hover:text-white">Heating</a>
@@ -186,15 +402,14 @@
       </div>
 
       <!-- input container  -->
-      <div class="flex flex-col justify-center">
-        <form>
-          <div class="flex space-x-3 flex-col justify-center md:flex-row">
-            <input type="text" class="flex-1  mb-4 py-2 px-4 rounded-full focus:outline-none"
-              placeholder="Join our VIP club">
-            <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
-              Go
-            </button>
-          </div>
+      <div class="grid grid-col-1 mx-auto">
+        <form class="flex space-x-3 justify-center flex-row">
+          <input type="text" class="flex-1  mb-4 py-2 px-4 rounded-full focus:outline-none"
+            placeholder="Join our VIP club">
+          <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+            Go
+          </button>
+
         </form>
         <div class="flex pt-4 justify-center space-x-4">
           <!--social links  -->

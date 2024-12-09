@@ -40,6 +40,10 @@
     sans-serif
 }
 
+h2 {
+  font-size: x-large
+}
+
 #logo {
   @apply w-[42px];
   width: 42px;
@@ -53,6 +57,9 @@
   height: 24px;
   transition: all 0.25s;
   position: relative;
+  position: absolute;
+  top: 3.5rem;
+  right: 2.5rem;
 }
 
 .hamburger-top,
@@ -65,7 +72,7 @@
   height: 2px;
   background: #e4dbdb;
   transform: rotate(0);
-  transition: all 0.5s;
+  transition: all 0.6s;
 }
 
 
@@ -97,7 +104,7 @@
 
 section {
   font-family: 'Roboto', sans-serif;
-  background: #333;
+  /* background: #333; */
   color: #fff;
   line-height: 1;
 }
@@ -112,7 +119,7 @@ section {
 .slide {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -126,10 +133,11 @@ section {
 .slide .content {
   position: absolute;
   bottom: 0px;
+
   /* left: -575px; */
   /* opacity: 0; */
-  height: 130px;
-  width: 575px;
+  height: 80px;
+  width: 375px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   padding: 15px;
@@ -217,4 +225,136 @@ button#prev {
 
 .slide:nth-child(6) {
   background: url('../img/Plumber-guy-2.png') no-repeat center top/cover;
+}
+
+.grid-row-card {
+  grid-template-rows: auto auto 1fr 30px
+}
+
+/*  Call to Actions */
+.cta {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.cta>div {
+  /* gap: 1rem; */
+}
+
+.cta img {
+  height: 60px;
+  width: auto;
+}
+
+.cta span {
+  display: grid;
+  grid-template-columns: 4.5rem 10rem;
+  margin: auto;
+  width: 100%;
+  gap: 1rem;
+  place-content: center;
+}
+
+.cta span h3 {
+  align-self: center;
+}
+
+.cta h4 {
+  display: grid;
+  place-content: center flex-start;
+}
+
+.cta span img {
+  place-self: end;
+}
+
+.container {
+  gap: 1em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.furnace img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 6/3;
+}
+
+/* ====== */
+main {
+  overflow: hidden;
+}
+
+/* form */
+
+.form_layout {
+  display: grid;
+  grid-template-columns: auto;
+  width: auto;
+  max-width: 600px;
+  border: 1px solid #000;
+
+}
+
+.form input:not([type="checkbox"]) {
+  border-radius: .25rem;
+  padding: .25rem;
+  width: 100%;
+  border: 2px inset #eee;
+}
+
+.form_layout fieldset {
+  margin: 1em;
+}
+
+.form_layout form p {
+  line-height: 1em;
+}
+
+.form_layout .gap {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.form_layout .border {
+  border-top: 1px solid #000;
+  padding: 1em;
+}
+
+.form_layout .border span {
+  text-decoration: underline;
+}
+
+.form {
+  padding: 3em;
+}
+
+.form_layout .pad {
+  padding-bottom: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+}
+
+/* .form_layout .car-layout>* {
+  margin: auto;
+}
+
+.form_layout .car-layout img {
+  width: 70vw;
+  aspect-ratio: 5/4;
+} */
+
+.form_layout .car-toggle {
+  margin: auto;
+  color: gray;
+  font-size: 30px;
+  cursor: pointer;
 }
