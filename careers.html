@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>APPLY FOR A FASTASTIC CAREER!</title>
+</head>
+
+<!-- Logo -->
+
+<body class="bg-fg-primary">
+  <header>
+
+
+    <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+        class="w-[50%] mx-auto my-2  max-w-[660px]"></a>
+
+    <!-- Navbar -->
+    <!-- Hambuger  -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    <nav class="grid relative w-100">
+      <!-- Flex Container -->
+      <div class="flex pb-2 justify-between lg: justify-evenly">
+
+        <!-- Menu Items -->
+        <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
+          <a href="./plumbing.html" class="text-zinc-400 hover:text-white">Plumbing</a>
+          <a href="./heating.html" class="text-zinc-400 hover:text-white">Heating</a>
+          <a href="./plumbing.html" class="text-zinc-400 hover:text-white">Water Heaters</a>
+          <a href="./heating.html" class="text-zinc-400 hover:text-white">Furnaces</a>
+          <a href="./repairs.html" class="text-zinc-400 hover:text-white">Repairs</a>
+        </div>
+        <!-- Button -->
+        <a href="./booking.html"
+          class="hidden md:block p-3 px-6 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] ">Book
+          Online</a>
+
+      </div>
+
+      <!-- Mobile menu  -->
+      <div class="relative z-10 md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center hidden self-end py-6 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-lg">
+          <a href="./plumbing.html" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
+          <a href="./heating.html" class="text-zinc-800 hover:text-zinc-400">Heating</a>
+          <a href="./plumbing.html" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
+          <a href="./heating.html" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
+          <a href="./repairs.html" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
+          <a href="#" class="bg-zinc-400 rounded-full p-3 text-zinc-800 drop-shadow-xl hover:text-white">Schedule
+            Work</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <form class="grid text-zinc-800 md:textlg lg:text-xl container bg-zinc-200 form_layout m-4" action="contact us">
+      <h5 class="container pt-3 text-center"><strong>Apply for a fantasic Career!</strong></h5>
+
+      <div class="container form grid">
+        <strong>Contact Details</strong>
+        <input type="text" name="customername" id="form-name" placeholder="First name">
+        <input type="text" name="address" id="form-address" placeholder="Last name">
+        <input type="text" name="companyname" id="form-name" placeholder="company name (if applicable)">
+        <input type="email" id="form-email" placeholder="Your Email Address">
+        <p>By providing your email, you consent to us contacting you.</p>
+        <input type="tel" name="telephone" id="form-telephone" placeholder="Your Phone Number">
+
+        <strong>Address</strong>
+        <div>
+          <input type="text" name="address" id="form-address" placeholder="Street 1">
+          <input type="text" name="address" id="form-address" placeholder="Street 2">
+          <input type="text" name="address" id="form-address" placeholder="City">
+          <input type="text" name="address" id="form-address" placeholder="Province">
+          <input type="text" name="address" id="form-address" placeholder="Postal Code">
+        </div>
+        <strong>Tell us about yourself and your experience.</strong>
+        <label for="information"><strong>Please provide as much information as you can</strong></label>
+        <textarea name="" id=""></textarea>
+        <ul>
+          <li>
+            <label for="services"><strong>What position are you applying for?</strong></label>
+            <ul>
+              <li><label><input type="checkbox" name="service" value="Plumbing"> Plumbing Technician</label></li>
+              <li><label><input type="checkbox" name="service" value="Heating"> Heating Technician</label>
+              </li>
+              <li><label><input type="checkbox" name="service" value="Position"> Electrician</label></li>
+              <li><label><input type="checkbox" name="service" value="Position"> Interior Designer</label></li>
+              <li><label><input type="checkbox" name="service" value="Position"> Tile Setter</label></li>
+              <li><label><input type="checkbox" name="service" value="Position"> Carpenter</label></li>
+              <li><label><input type="checkbox" name="service" value="Position"> Flooring Mechanic</label></li>
+              <li><label><input type="checkbox" name="service" value="Gas"> Management</label></li>
+              <li><label><input type="checkbox" name="service" value="HVAC"> Sales and Customer Service</label></li>
+            </ul>
+          </li>
+        </ul>
+
+        <label for="Availablity"><strong>What day would be the best for an interview?</strong></label>
+        <ul>
+          <li><input type="datetime-local"></li>
+          <label for="Availablity"><strong>What is another daythat will work for you?</strong>(Optional)</label>
+          <li><input type="datetime-local"></li>
+          <ul>
+            <li>
+              <label for="services"><strong>How many hours a week are you available?</strong>(Optional)</label>
+              <div class="pad">
+                <ul>
+                  <li><label><input type="checkbox" name="times" value="Anytime"> Anytime</label></li>
+                  <li><label><input type="checkbox" name="times" value="Morning" checked=""> Full time</label></li>
+                  <li><label><input type="checkbox" name="times" value="Afternoon"> Part time</label></li>
+                  <li><label><input type="checkbox" name="times" value="Evenings"> Evenings</label></li>
+                </ul>
+                <label for="services"><strong>Are you willing to take a drug test?</strong>(Optional)</label>
+                <div class="pad">
+                  <ul>
+                    <li><label><input type="checkbox" name="times" value="Morning" checked=""> YES</label></li>
+                    <li><label><input type="checkbox" name="times" value="Anytime">No</label></li>
+                  </ul>
+                </div>
+                <div class="pad">
+                  <label for="images"><strong>Share images of your work with us</strong>(Optional) <br> </label>
+
+                  <label>Share images of the work to be done.
+                    <input type="file" name="photo"></label>
+
+
+                  <!-- <li class=" text-center ybtn"><input type="submit" value="SUBMIT"></li> -->
+                  <button type="submit" class="submit_btn"><strong>Submit</strong></button>
+                  <p class="border">This form is protected by reCAPTCHA and the google <span>Privacy Policy</span> and
+                    <span>Terms of Service</span> apply.
+                  </p>
+                  <p class="jobber text-center">Powered by <img
+                      src="./assets/images/site_images/powered_by_jobber-7d91fc1287f19f05bfe9dea6f733b1e1a7a0ccd8c2e7df544ebb6cd3ee68fb66.svg"
+                      alt="Jobber"></p>
+                </div>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </form>
+    <div class="container bg-zinc-600 text-white text-center py-2 p-2 rounded-2xl text-md font-black md:text-xl
+          lg:text-3xl">
+      <p>ENJOY PROFIT SHARING BONUSES AND RECIEVE A RETIREMENT!</p>
+      <p>UNIFORMS PROVIDED!</p>
+      <p>BE PART OF A TEAM YOUR CAN BE PROUD OF!</p>
+      <p>CHRISTMAS BONUSES!</p>
+    </div>
+  </main>
+  <!-- footer  -->
+  <footer class="bg-black">
+    <div class="container flex flex-col-reverse justify-evenly px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links  -->
+
+
+      <!-- footer Nav  -->
+      <div class="flex mx-auto space-x-8 lg:space-x-32">
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="./plumbing.html" class="hover:text-white">Plumbing</a>
+          <a href="./heating.html" class="hover:text-white">Heating</a>
+          <a href="./repairs.html" class="hover:text-white">Repairs</a>
+        </div>
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="./careers.html" class="hover:text-white">Careers</a>
+          <a href="./blog.html" class="hover:text-white">Blog</a>
+          <a href="./about-us.html" class="hover:text-white">About&nbspUs</a>
+        </div>
+      </div>
+
+      <!-- input container  -->
+      <div class="grid grid-col-1 mx-auto">
+        <form>
+          <div class=" flex space-x-3 justify-center flex-row">
+            <input type=rid class="flex-1 mb-4 py-2 px-4 rounded-full focus:outline-none"
+              placeholder="Join our VIP club">
+            <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+              Go
+            </button>
+          </div>
+        </form>
+        <div class="flex pt-4 justify-center space-x-4">
+          <!--social links  -->
+          <a href="#">
+            <img src="assets/img/icon-facebook.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-youtube.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-twitter.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-pinterest.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-instagram.svg" alt="" class="h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+      class="w-[80%] mx-auto -mt-8 mb-6 max-w-[660px]"></a> -->
+    <div class=" p-4 text-white text-center ">
+      <p>
+        <a href="./index.html" class="underline">Flash Gordon Plumbing</a>
+        <small>
+          Copyright &copy; 2024 Gordon Montgomery, All
+          Rights Reserved
+        </small>
+      </p>
+    </div>
+    <!-- <div>
+      <H1 class="-mt-8 pb-2 px-2 drop-shadow-lg text-white text-center text-xl md:text-2xl lg:text-3xl">
+        FLASH GORDON
+        PLUMBING&nbsp;&&nbsp;HEATING
+      </H1> 
+    </div> -->
+  </footer>
+</body>
+
+</html>

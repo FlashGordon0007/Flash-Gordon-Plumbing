@@ -114,6 +114,16 @@ section {
   overflow: hidden;
   height: 60vh;
   width: 100vw;
+
+  @media screen and (min-width: 1280px) {
+    /* height: 70vh; */
+    height: 85vh;
+  }
+
+  @media screen and (min-width: 1536px) {
+    /* height: 85vh; */
+    height: 100vh;
+  }
 }
 
 .slide {
@@ -136,7 +146,7 @@ section {
 
   /* left: -575px; */
   /* opacity: 0; */
-  height: 80px;
+  min-height: 100px;
   width: 375px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
@@ -163,6 +173,11 @@ button#prev {
   position: absolute;
   top: 50%;
   left: 15px;
+}
+
+:is(button#next,
+  button#prev) {
+  background-color: #eee;
 }
 
 :is(button#next,
@@ -204,7 +219,7 @@ button#prev {
 
 /* Background images */
 .slide:first-child {
-  background: url('../img/Combination-Radiant-In-Floor-Heating-System.jpg') no-repeat center center/cover;
+  background: url('../img/Plumber-guy-2.png') no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
@@ -216,7 +231,7 @@ button#prev {
 }
 
 .slide:nth-child(4) {
-  background: url('../img/671657083373.webp') no-repeat center top/cover;
+  background: url('../img/monty/HVAC-Tech-Making-Repairs.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(5) {
@@ -224,7 +239,7 @@ button#prev {
 }
 
 .slide:nth-child(6) {
-  background: url('../img/Plumber-guy-2.png') no-repeat center top/cover;
+  background: url('../img/Combination-Radiant-In-Floor-Heating-System.jpg') no-repeat center center/cover;
 }
 
 .grid-row-card {
@@ -357,4 +372,26 @@ main {
   color: gray;
   font-size: 30px;
   cursor: pointer;
+}
+
+.specialist {
+  max-width: 80vw;
+}
+
+.specialist div img {
+  max-width: 400px;
+}
+
+.submit_btn {
+  background: #999;
+  border: outset 1px #eee;
+  border-radius: 1rem;
+  padding: .25rem;
+  margin-bottom: .5rem;
+  transition: all ease-in-out .3s
+}
+
+.submit_btn:hover {
+  background: #ccc;
+  border: inset 1px #eee;
 }
