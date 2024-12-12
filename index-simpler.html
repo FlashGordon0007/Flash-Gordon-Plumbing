@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Flash Gordon Plumbing & Heating Home Page</title>
+</head>
+
+<!-- Logo -->
+
+<body class="bg-fg-primary">
+  <header>
+
+
+    <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+        class="w-[50%] mx-auto my-2  max-w-[660px]"></a>
+
+    <!-- Navbar -->
+    <!-- Hambuger  -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    <nav class="grid relative w-100">
+      <!-- Flex Container -->
+      <div class="flex pb-2 justify-between lg: justify-evenly">
+
+        <!-- Menu Items -->
+        <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
+          <a href="./plumbing.html" class="text-zinc-400 hover:text-white">Plumbing</a>
+          <a href="./heating.html" class="text-zinc-400 hover:text-white">Heating</a>
+          <a href="./plumbing.html" class="text-zinc-400 hover:text-white">Water Heaters</a>
+          <a href="./heating.html" class="text-zinc-400 hover:text-white">Furnaces</a>
+          <a href="./repairs.html" class="text-zinc-400 hover:text-white">Repairs</a>
+        </div>
+        <!-- Button -->
+        <a href="./booking.html"
+          class="hidden md:block p-3 px-6 text-white animate-pulse bg-zinc-400 rounded-full baseline hover:bg-[#C3922E] ">Book
+          Online</a>
+
+      </div>
+
+      <!-- Mobile menu  -->
+      <div class="relative z-10 md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center hidden self-end py-6 space-y-6 text-xl bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-lg">
+          <a href="./plumbing.html" class="text-zinc-800 hover:text-zinc-400">Plumbing</a>
+          <a href="./heating.html" class="text-zinc-800 hover:text-zinc-400">Heating</a>
+          <a href="./plumbing.html" class="text-zinc-800 hover:text-zinc-400">Water Heaters</a>
+          <a href="./heating.html" class="text-zinc-800 hover:text-zinc-400">Furnaces</a>
+          <a href="./repairs.html" class="text-zinc-800 hover:text-zinc-400">Repairs</a>
+          <a href="#" class="bg-zinc-400 rounded-full p-3 text-zinc-800 drop-shadow-xl hover:text-white">Schedule
+            Work</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="relative">
+      <div class="slider">
+        <div class="slide current">
+          <div class="content">
+            <h1>Our technitians show up ready to get your job done!</h1>
+            <p>See who your technitian is and know when your technitian will arrive by checking their GPS location.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>We do commercial heating systems of any size!</h1>
+            <p>With multilink technology we can connect up to 20 Tankless water heater units to provide 192 gallons of
+              on
+              demand hot water.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Navien Tankless Water Heater</h1>
+            <p>This combination In-Floor heating system also produces endless hot water all out of one unit and comes
+              with a $2,500 instant rebate.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Regular maintenance will keep your equipment running smooth.</h1>
+            <p>We service and repair all types of heating systems.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>We do video camera sewer inspections!</h1>
+            <p>No matter what kind of a drainage issue you have we can come to the rescue!
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <h1>Radiant In-Floor Heating System</h1>
+            <p>Experience ultimate comfort with warm and cozy heated floors.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+          </svg></button>
+        <button id="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+          </svg></button>
+      </div>
+    </section>
+
+
+
+    <div class="cta">
+      <div class="flex flex-col md:flex-row text-white">
+
+        <span>
+          <img src="./assets/img/excellent-service-icon.svg" alt="">
+          <h3>
+            EXCELLENT SERVICE
+          </h3>
+        </span>
+
+        <span>
+          <img src="./assets/img/always-on-time-icon.svg" alt="">
+          <h3>
+            ALWAYS ON TIME
+          </h3>
+        </span>
+
+        <span>
+          <img src="./assets/img/book-online-icon.svg" alt="">
+          <h3>
+            EASY TO BOOK
+          </h3>
+        </span>
+      </div>
+    </div>
+
+    <!-- Service Cards -->
+    <!-- ring-[#baafaf] [#baafaf] -->
+    <div class="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[3rem] gap-[3rem] pb-[2rem]">
+
+      <div class="bg-zinc-300 text-zinc-600 text-center p-6 rounded-md grid grid-col-1 grid-row-card">
+
+        <img src="./assets/img/monty/heat-pump-water heaters are 99% efficient.png" alt="">
+
+        <h2 class="pt-6">WATER HEATERS</h2>
+
+        <table class="m-6">
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Electric
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">40-50 Gallon</td>
+            <td class="price text-right">$1,350</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">20-30 Gallon</td>
+            <td class="price text-right">$1,350</td>
+          </tr>
+
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Gas
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">40-50 Gallon</td>
+            <td class="price text-right">$1,750</td>
+          </tr>
+
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Tankless
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Installed</td>
+            <td class="price text-right">$5,500</td>
+          </tr>
+
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Heat Pump Water Heaters
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Installed</td>
+            <td class="price text-right">$5,500</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Boilers
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Installed</td>
+            <td class="price text-right">$6,500</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Recirculation Pumps
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">With New Heater</td>
+            <td class="price text-right">$500</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">With Existing Heater</td>
+            <td class="price text-right">$900</td>
+          </tr>
+        </table>
+
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+          <!-- <a class="text-zinc-800 mb-6 bg-zinc-400 rounded-full p-1 px-4 hover:text-white" href="./booking.html">Book
+            Now</a> -->
+        </div>
+      </div>
+
+      <div class="bg-zinc-300 text-zinc-600 text-center p-6 rounded-md grid grid-col-1 grid-row-card">
+
+        <img src="./assets/img/monty/Water-Damaged-Kitchen-Cabinets.webp" alt="">
+
+        <h2 class="pt-6">PLUMBING REPAIRS</h2>
+
+        <table class="m-6">
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Toilets
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Pro Flow 2-piece</td>
+            <td class="price text-right">$595</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Toto or Kohler 1-piece</td>
+            <td class="price text-right">$795</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Leaking toilets reset</td>
+            <td class="price text-right">$279</td>
+          </tr>
+
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Garbage Disposals
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Badger-1 with 1 year warranty</td>
+            <td class="price text-right">$495</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Badger-5 with 5 year warranty</td>
+            <td class="price text-right">$595</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Pro-Series with 10 year warranty</td>
+            <td class="price text-right">$750</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Faucet Repairs
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Bathroom vanity faucets </td>
+            <td class="price text-right">$395</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Kitchen Sink faucets</td>
+            <td class="price text-right">$595</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Schedule a design consultation</td>
+            <td class="price text-right">$129</td>
+          </tr>
+        </table>
+
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-zinc-300 text-zinc-600 text-center p-6 rounded-md grid grid-col-1 grid-row-card">
+        <img src="./assets/img/monty/Flash Gordon testing breakers.jpg" alt="">
+        <h2 class="pt-6">ELECTRICAL REPAIRS</h2>
+
+        <table class="m-6">
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Light fixtures
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">New light fixtures</td>
+            <td class="price text-right">$150</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Can Lights</td>
+            <td class="price text-right">$95</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Under cabinet Lights</td>
+            <td class="price text-right">$295</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Outlets & Switches
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">New outlets</td>
+            <td class="price text-right">$95</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">New switches</td>
+            <td class="price text-right">$95</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">GFI Outlets</td>
+            <td class="price text-right">$150</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Smart Devices
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Smart lighting and switches installed</td>
+            <td class="price text-right">$195</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Home automation & security solutions</td>
+            <td class="price text-right">Starting @ $595</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Security lighting and cameras</td>
+            <td class="price text-right">Starting @ $295</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Lighting design consultation</td>
+            <td class="price text-right">$129</td>
+          </tr>
+        </table>
+
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+      <div class="bg-zinc-300 text-zinc-600 text-center p-6 rounded-md grid grid-col-1 grid-row-card">
+        <img src="./assets/img/monty/Screen-Shot-2015-02-12-at-12.webp" alt="">
+        <h2 class="pt-6">FURNACES</h2>
+
+        <table class="m-6">
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Gas Furnaces
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">40-60K BTU (up to 2,000 sq ft)</td>
+            <td class="price text-right">$6,495</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">95K BTU (over 2,000 sq ft)</td>
+            <td class="price text-right">$8,450</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Electric Furnaces
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Small and mobile homes</td>
+            <td class="price text-right">$3,950</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Large home</td>
+            <td class="price text-right">$7,950</td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text-left text-xl pt-6">Maintenance
+            <th>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">5 year full service on heat exchanger, burner cleaning, and new filter</td>
+            <td class="price text-right">$379</td>
+          </tr>
+          <tr class="item">
+            <td class="name text-left">Annual maintenace service including a new filter</td>
+            <td class="price text-right">$179</td>
+          </tr>
+        </table>
+
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+
+      <div class="furnace text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>FURNACES</h2>
+        <img src="./assets/img/monty/Screen-Shot-2015-02-12-at-12.webp" alt="">
+        <div>
+          <h3 class="text-2xl">Flash Gordon we will get your heat fixed fast! We treat you like family.</h3>
+          <p>We have gas and electric furnaces in stock for every size home. We will come out and set up temporary
+            heat
+            fot you the same day and install your new furnace the next day. WATER won't leave you in a bad position
+            like
+            other HVAC companies are known to do!</p>
+          <h3 class="text-left font-bold pb-2">Gas Furnaces:</h3>
+          <ul>
+            <li class="text-center">Get a 5 year full service on heat exchanger, burner cleaning, and new filter for
+              $379
+            </li>
+          </ul>
+          <ul>
+            <li class="text-center">40-60K BTU (up to 2,000 sq ft) installed for $6,495</li>
+            <li class="text-center">95K BTU (over 2,000 sq ft) installed for $8,450</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Electric Furnaces:</h3>
+          <ul>
+            <li class="text-center">Get an annual maintenace service including a new filter for $179</li>
+            <li class="text-center">Small and mobile homes installed for $3,950</li>
+            <li class="text-center">Large home installed for $7,950</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="text-white  p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2 class="text-center">HVAC | FANS </h2>
+        <img src="./assets/img/monty/HPWH-scaled-e1696619640438.jpg" alt="">
+        <div>
+          <h3 class="text-2xl">Indoor air quality is important for your health and removing moisture saves your home
+            from expensive destruction</h3>
+          <ul class="text-center">
+            <li class=" text-center">Ultra Quiet Bathroom Fans installed for $695</li>
+            <li class=" text-center">Kitchen Range Hoods installed for $795</li>
+            <li class=" text-center">Whole house HEPA filters installed for $995</li>
+            <li class=" text-center">Dryer Venting can be repaired by the hour or replace for $795</li>
+            <li class=" text-center">Ceiling Fans installed for $695</li>
+            <li class=" text-center">Gable Attic Fans installed for $695</li>
+            <li class=" text-center">Roof Attic Fans installed for $795</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid
+      grid-col-1 grid-row-card">
+        <h2>HEAT PUMPS</h2>
+        <img src="./assets/img/monty/Mini_split_9a9259c17d.jpeg" alt="">
+        <div>
+          <h3 class="text-2xl">Heat Pumps are available as a stand alone unit with air handler to supply warm and
+            cozy filtered ultra pure air to the whole house or as a ductless mini-split system intsalled in strategic
+            areas of the home.</h3>
+          <h3 class="text-left font-bold pb-2">Heat Pumps with Air Handlers:</h3>
+          <ul>
+            <li class="text-right">Small and mobile homes installed for $8,450</li>
+            <li class="text-right">Large home installed for $7,950</li>
+          </ul>
+          <hr>
+          <h3 class="text-left mt-4 font-bold pb-2">Ductless Heat Pumps (mini-split):</h3>
+          <ul>
+            <li class="text-right">Base price for 1 head installed for $5,950</li>
+            <li class="text-right">Each additional head installed for $2,000</li>
+            <li class="text-right">Hidden recessed style heads adds $1,000 per head</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="pt-2">
+          <a class="btn-card" href="./booking.html">
+            Book Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-500px gap-4 m-4 w-11/12 md:w-5/6">
+      <img src="./assets/img/monty/Bellingham Service  Map.png" alt="Business location map">
+      <div class="flex flex-col gap-1 md:gap-2 lg:gap-6">
+        <h2 class=" text-white text-center md:text-3xl py-1">SERVICE AREAS</h2>
+        <ul class="text-center text-lg lg:space-y-2 md:text-2xl lg:text-3xl">
+          <li>Bellingham</li>
+          <li>Samish Lake</li>
+          <li>Fairhaven</li>
+          <li>Chuckanut</li>
+          <li>Edgemoore</li>
+          <li>Geneva</li>
+          <li>Sudden Valley</li>
+          <li>Marietta-Alderwood</li>
+          <li>Ferndale</li>
+        </ul>
+        <button
+          class="mx-auto text-zinc-800 text-center font-black bg-zinc-400 py-3 px-4 rounded-full  hover:bg-[#C3922E]">
+          <!-- ring-offset-8 ring-offset-[#baafaf]-100/50 -->
+          10% DISCOUNT *
+        </button>
+      </div>
+    </section>
+
+    <div class="container bg-zinc-600 text-white text-center my-4 py-2 p-2 rounded-2xl text-md font-black md:text-xl
+      lg:text-3xl">
+      <p>PUBLISHED PRICES MEANS INTEGRITY!</p>
+      <p>HOT WATER/HEAT RESTORED IN 1 DAY!</p>
+      <p>NEVER BUY ANOTHER HEATER AGAIN!</p>
+    </div>
+
+    <div class="grid grid-col-1 md:grid-cols-2 xl:grid-cols-4 container specialist">
+      <img src="./assets/img/Navien-Service-Specialist-Logo-1.png" alt="">
+      <img src="./assets/img/Our service trucks are stocked with parts.jpg" alt="">
+      <img src="./assets/img/Rinnai Tankless Water Heater.jpg" alt="">
+      <img src="./assets/img/monty/Navien Combi-Tankless with circulator pump.webp" alt="">
+    </div>
+  </main>
+
+  <!-- footer  -->
+  <footer class="bg-black">
+    <div class="container flex flex-col-reverse justify-evenly px-6 py-4 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links  -->
+
+
+      <!-- footer Nav  -->
+      <div class="flex mx-auto space-x-8 lg:space-x-32">
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="./plumbing.html" class="hover:text-white">Plumbing</a>
+          <a href="./heating.html" class="hover:text-white">Heating</a>
+          <a href="./repairs.html" class="hover:text-white">Repairs</a>
+        </div>
+        <div class="flex flex-col text-xl font-black text-zinc-400 space-y-3">
+          <a href="./careers.html" class="hover:text-white">Careers</a>
+          <a href="./blog.html" class="hover:text-white">Blog</a>
+          <a href="./about-us.html" class="hover:text-white">About&nbspUs</a>
+        </div>
+      </div>
+
+      <!-- input container  -->
+      <div class="grid grid-col-1 mx-auto">
+        <form class="flex space-x-3 justify-center flex-row">
+          <input type="text" class="flex-1  mb-4 py-2 px-4 rounded-full focus:outline-none"
+            placeholder="Join our VIP club">
+          <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
+            Go
+          </button>
+
+        </form>
+        <div class="flex pt-4 justify-center space-x-4">
+          <!--social links  -->
+          <a href="#">
+            <img src="assets/img/icon-facebook.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-youtube.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-twitter.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-pinterest.svg" alt="" class="h-8">
+          </a>
+          <a href="#">
+            <img src="assets/img/icon-instagram.svg" alt="" class="h-8">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="./index.html"><img src="./assets/img/Logo_Hero.png" alt="Logo"
+      class="w-[80%] mx-auto -mt-8 mb-6 max-w-[660px]"></a> -->
+    <div class=" p-4 text-white text-center ">
+      <p>
+        <a href="./index.html" class="underline">Flash Gordon Plumbing</a>
+        <small>
+          Copyright &copy; 2024 Gordon Montgomery, All
+          Rights Reserved
+        </small>
+      </p>
+    </div>
+    <!-- <div>
+      <H1 class="-mt-8 pb-2 px-2 drop-shadow-lg text-white text-center text-xl md:text-2xl lg:text-3xl">
+        FLASH GORDON
+        PLUMBING&nbsp;&&nbsp;HEATING
+      </H1> 
+    </div> -->
+  </footer>
+</body>
+
+</html>

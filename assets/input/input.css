@@ -101,6 +101,21 @@ h2 {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/* Book now button */
+
+@layer components {
+  .btn-card {
+    @apply text-zinc-800 mb-6 bg-zinc-400 rounded-full p-1 px-4 hover: text-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply text-white text-center p-3 ring-2 rounded-md ring-[#f1ca2e] ring-offset-4 ring-offset-zinc-100/50 grid grid-col-1 grid-row-card;
+  }
+}
+
+/* Image slider */
 
 section {
   font-family: 'Roboto', sans-serif;
