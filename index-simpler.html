@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="./assets/js/script.js" defer></script>
   <title>Flash Gordon Plumbing & Heating Home Page</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <!-- Logo -->
@@ -28,7 +29,7 @@
     </button>
     <nav class="grid relative w-100">
       <!-- Flex Container -->
-      <div class="flex pb-2 justify-between lg: justify-evenly">
+      <div class="flex pb-2 justify-between lg:justify-evenly">
 
         <!-- Menu Items -->
         <div class="hidden text-xl font-black space-x-4 md:flex lg:text-2xl lg:space-x-10">
@@ -152,9 +153,13 @@
 
     <!-- Service Cards -->
     <!-- ring-[#baafaf] [#baafaf] -->
+      <div class="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[3rem] gap-[2rem] pb-[2rem]">
+
+
+      </div>
       <div class="bg-zinc-300 text-zinc-600 text-center p-6 rounded-md grid grid-col-1 grid-row-card">
 
-        <img src="./assets/img/monty/heat-pump-water heaters are 99% efficient.png" alt="">
+        <img src="./assets/img/monty/HPWH-scaled-e1696619640438.jpg" alt="">
 
         <h2 class="pt-6">WATER HEATERS</h2>
         <table class="m-6">
@@ -559,17 +564,19 @@
         </div>
       </div>
 
-      <!-- input container  -->
-      <div class="grid grid-col-1 mx-auto">
-        <form class="flex space-x-3 justify-center flex-row">
-          <input type="text" class="flex-1  mb-4 py-2 px-4 rounded-full focus:outline-none"
-            placeholder="Join our VIP club">
-          <button class="px-6 mb-4 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">
-            Go
-          </button>
-
-        </form>
-        <div class="flex pt-4 justify-center space-x-4">
+            <!-- input container  -->
+   <div class="grid grid-col-1 mx-auto">
+    <form class="flex flex-col space-y-3 justify-center" action="https://formsubmit.co/gordonplumbinginc@gmail.com" method="POST">
+     <input type="text" name="name" placeholder="Your Name" required class="flex-1 mb-2 py-2 px-4 rounded-full focus:outline-none">
+     <input type="email" name="email" placeholder="Your Email" required class="flex-1 mb-2 py-2 px-4 rounded-full focus:outline-none">
+    
+     <!-- Google reCAPTCHA -->
+     <div class="g-recaptcha" data-sitekey="6LcljFIrAAAAAGIC2SawK1WNqmyIjb39FCJFh67L"></div>
+    
+     <button type="submit" class="px-6 py-2 text-black rounded-full bg-zinc-400 hover:bg-white focus:outline-none">Go</button>
+    </form>
+       
+       <div class="flex pt-4 justify-center space-x-4">
           <!--social links  -->
           <a href="#">
             <img src="assets/img/icon-facebook.svg" alt="" class="h-8">
