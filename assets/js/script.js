@@ -70,3 +70,24 @@ if (auto) {
 }
 
 
+// VIP CLUB info retrieval
+function doPost(e) {
+  // Get the active spreadsheet (which is now your new 'VIP Sign-ups - Clean Version' sheet)
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  var data = e.parameter;
+
+  // Extract your specific fields from the form submission
+  var name = data.name;
+  var email = data.email;
+  var phoneNumber = data.phoneNumber;
+
+  var timestamp = new Date(); // Get the current timestamp
+
+  // Append a new row to the sheet, matching your new column headers:
+  // Timestamp, Name, Email, Phone Number
+  sheet.appendRow([timestamp, name, email, phoneNumber]);
+  // IMPORTANT: Now your Google Sheet's columns should be exactly: Timestamp | Name | Email | Phone Number
+
+  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+}
